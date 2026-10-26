@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+.experience-section {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+.section-header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.section-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e2e8f0;
+}
+
+/* Grid Layout: ზუსტად 2 სვეტი (2 ბარათი ზემოთ, 2 ბარათი ქვემოთ) */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Individual Experience Card */
+.experience-card {
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 45px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.07);
+}
+
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.experience-card-header h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.experience-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b2a4a;
+  letter-spacing: 0.3px;
+}
+
+.experience-date {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #555;
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.experience-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 15px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.experience-list li {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4b5563;
+  position: relative;
+  padding-left: 18px;
+}
+
+.experience-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1b2a4a;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 30px 22px;
+  }
+  
+  .experience-card-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.experience-section {
+  min-width: 0;
+  margin-top: clamp(24px, 3vw, 50px);
+}
+
+.section-header {
+  gap: clamp(10px, 1.5vw, 20px);
+  padding: 0 clamp(4px, 1vw, 15px);
+}
+
+.section-header h2 {
+  font-size: clamp(17px, 2vw, 26px);
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.experience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 30px);
+}
+
+.experience-card {
+  min-width: 0;
+  border-radius: clamp(20px, 2vw, 32px);
+  padding: clamp(22px, 3vw, 45px);
+}
+
+.experience-card-header {
+  min-width: 0;
+}
+
+.experience-card-header h3 {
+  font-size: clamp(16px, 1.5vw, 20px);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header {
+    align-items: flex-start;
+  }
+
+  .section-header h2 {
+    line-height: 1.3;
+  }
+
+  .experience-date {
+    white-space: normal;
+  }
+}

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+/* Hero Card */
+.hero-card {
+  background: #ffffff;
+  border-radius: clamp(22px, 2.2vw, 36px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.01);
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(560px, 47vw, 760px);
+  overflow: hidden;
+}
+
+/* Background Scenery */
+.card-bg-scenery {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 55%;
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px) brightness(1.05) saturate(1.1);
+  border-radius: inherit;
+  z-index: 1;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 15%,
+    rgba(0, 0, 0, 1) 40%
+  );
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 15%,
+    rgba(0, 0, 0, 1) 40%
+  );
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(74%, 1000px);
+  min-height: inherit;
+  padding: clamp(36px, 4vw, 68px);
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  margin-bottom: 22px;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background-color: #1b2a4a;
+  color: #ffffff;
+  font-size: clamp(12px, 1.35vw, 20px);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+/* Typography */
+.hero-content h1 {
+  margin-bottom: 18px;
+  color: #111111;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(36px, 4.1vw, 62px);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hero-description {
+  max-width: 720px;
+  margin-bottom: 10px;
+  color: #555555;
+  font-size: clamp(15px, 1.25vw, 19px);
+  line-height: 1.65;
+}
+
+.hero-divider {
+  width: min(100%, 620px);
+  height: 1px;
+  margin-bottom: 8px;
+  background-color: #eeeeee;
+}
+
+/* Contact Details */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+  margin-top: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  color: #222222;
+  font-size: clamp(11px, 0.85vw, 14px);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.contact-icon {
+  font-size: 14px;
+}
+
+/* Georgian Flag */
+.geo-flag {
+  width: 22px;
+  height: 15px;
+  margin-left: 2px;
+  border-radius: 2px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Rider Cutout Image (მაქსიმალურად გაზრდილი ზომები) */
+.hero-image-container {
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  align-items: flex-end;
+  width: min(65%, 920px);
+  height: 115%;
+  pointer-events: none;
+}
+
+.hero-image-3d {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(1.02) contrast(1.02)
+    drop-shadow(-15px 12px 25px rgba(0, 0, 0, 0.22));
+
+  -webkit-mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%
+  );
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%
+  );
+}
+
+/* Tablet and Mobile */
+@media (max-width: 968px) {
+  .hero-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .card-bg-scenery {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: clamp(260px, 48vw, 440px);
+    border-radius: 0;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 35%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 35%
+    );
+  }
+
+  .hero-content {
+    width: 100%;
+    min-height: auto;
+    padding: clamp(28px, 5vw, 52px);
+  }
+
+  .hero-content h1 {
+    font-size: clamp(30px, 6vw, 44px);
+  }
+
+  .hero-image-container {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    z-index: 4;
+    width: min(100%, 580px);
+    max-width: 100%;
+    height: clamp(260px, 48vw, 440px);
+    margin: -20px auto 0;
+  }
+
+  .hero-image-3d {
+    object-fit: contain;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 600px) {
+  .hero-card {
+    border-radius: 22px;
+  }
+
+  .hero-content {
+    padding: 28px 22px 20px;
+  }
+
+  .badge {
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    white-space: normal;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(30px, 9vw, 44px);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .contact-item {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
