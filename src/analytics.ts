@@ -1,71 +1,33 @@
-// Measurement ID is public by design (same as Google’s HTML snippet).
-const GA_ID =
-  (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) ||
-  'G-QFXJJKT072'
-
 declare global {
   interface Window {
     dataLayer: unknown[]
-    gtag: (...args: unknown[]) => void
+    gtag?: (...args: unknown[]) => void
   }
 }
 
-let configured = false
-const pendingPageViews: Array<{ path: string; title?: string }> = []
+/** GA4 ID — matches the snippet in index.html */
+export const GA_MEASUREMENT_ID = 'G-QFXJJKT072'
 
-function flushPending() {
-  while (pendingPageViews.length > 0) {
-    const next = pendingPageViews.shift()
-    if (next) sendPageView(next.path, next.title)
-  }
-}
-
-function sendPageView(path: string, title?: string) {
-  window.gtag('event', 'page_view', {
-    page_path: path,
-    page_title: title ?? document.title,
-    page_location: window.location.href,
-  })
-}
-
-function loadGtag() {
-  if (!GA_ID || configured) return
-
-  window.dataLayer = window.dataLayer || []
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args)
-  }
-
-  window.gtag('js', new Date())
-  window.gtag('config', GA_ID, {
-    send_page_view: true,
-  })
-
-  if (!document.getElementById('ga-gtag')) {
-    const script = document.createElement('script')
-    script.id = 'ga-gtag'
-    script.async = true
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(GA_ID)}`
-    document.head.appendChild(script)
-  }
-
-  configured = true
-  flushPending()
-}
-
-export function initAnalytics() {
-  if (!GA_ID || typeof window === 'undefined') return
-  loadGtag()
-}
-
-export function trackPageView(path: string, title?: string) {
-  if (!GA_ID) return
-
-  if (!configured || typeof window.gtag !== 'function') {
-    pendingPageViews.push({ path, title })
-    loadGtag()
+function whenGtagReady(fn: () => void, attempts = 40) {
+  if (typeof window.gtag === 'function') {
+    fn()
     return
   }
+  if (attempts <= 0) return
+  window.setTimeout(() => whenGtagReady(fn, attempts - 1), 50)
+}
 
-  sendPageView(path, title)
+/**
+ * SPA route change page_view.
+ * Initial page_view is sent by the gtag snippet in index.html.
+ */
+export function trackPageView(path: string, title?: string) {
+  whenGtagReady(() => {
+    window.gtag!('event', 'page_view', {
+      page_path: path,
+      page_title: title ?? document.title,
+      page_location: window.location.href,
+      send_to: GA_MEASUREMENT_ID,
+    })
+  })
 }

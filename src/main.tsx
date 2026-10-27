@@ -5,10 +5,7 @@ import './i18n'
 import './index.css'
 import App from './App.tsx'
 import AnalyticsListener from './components/AnalyticsListener'
-import { initAnalytics } from './analytics'
 import { getDefaultLanguage, isLanguageCode } from './languages'
-
-initAnalytics()
 
 function RootRedirect() {
   return <Navigate to={`/${getDefaultLanguage()}`} replace />
