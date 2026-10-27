@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "brand": "LAZARE OSIASHVILI",
+    "profile": "PROFILE",
+    "experience": "EXPERIENCE",
+    "stewardship": "STEWARDSHIP",
+    "riding": "RIDING",
+    "education": "EDUCATION",
+    "contact": "CONTACT"
+  },
+  "lang": {
+    "switchTo": "Switch language"
+  }
+}

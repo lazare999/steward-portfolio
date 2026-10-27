@@ -1,0 +1,20 @@
+{
+  "badge": "迎接新挑战",
+  "title": "随时欢迎马术相关职位与合作",
+  "description": "如果您需要在赛事组织、场地管理与 FEI 赛事管理方面经验丰富、尽职尽责的专业人士，欢迎直接留言。",
+  "form": {
+    "namePlaceholder": "您的姓名",
+    "emailPlaceholder": "您的邮箱",
+    "messagePlaceholder": "您的留言...",
+    "send": "发送消息",
+    "sending": "发送中..."
+  },
+  "alerts": {
+    "success": "消息发送成功！",
+    "error": "消息发送失败，请重试。"
+  },
+  "footer": {
+    "copyright": "© {{year}} Lazare Osiashvili。保留所有权利。",
+    "role": "FEI 一级赛事管理官 • 场地障碍"
+  }
+}

@@ -1,7 +1,9 @@
-
+import { useTranslation } from 'react-i18next'
 import './Credentials.css'
 
 export default function Credentials() {
+  const { t } = useTranslation('credentials')
+
   const calculateAge = (birthDateString: string) => {
     const birthDate = new Date(birthDateString)
     const today = new Date()
@@ -21,25 +23,29 @@ export default function Credentials() {
 
   const age = calculateAge('2004-05-11')
 
+  const equestrianSkills = t('skills.equestrian', {
+    returnObjects: true,
+  }) as string[]
+  const technicalSkills = t('skills.technical', {
+    returnObjects: true,
+  }) as string[]
+
   return (
     <section className="credentials-section" id="education">
       <div className="section-header">
-        <h2>EDUCATION, SKILLS & PROFILE</h2>
+        <h2>{t('sectionTitle')}</h2>
         <div className="section-line"></div>
       </div>
 
       <div className="credentials-grid">
-        {/* 1. Education & Certification */}
         <div className="credential-card">
-          <div className="card-top-tag">EDUCATION</div>
-          <h3>Academic & Certification</h3>
-          <p className="credential-subtitle">
-            University & FEI Qualifications
-          </p>
+          <div className="card-top-tag">{t('education.tag')}</div>
+          <h3>{t('education.title')}</h3>
+          <p className="credential-subtitle">{t('education.subtitle')}</p>
 
           <div className="edu-item" style={{ marginBottom: '16px' }}>
             <strong style={{ color: '#111', fontSize: '15px' }}>
-              Business and Technology University (BTU)
+              {t('education.university')}
             </strong>
 
             <p
@@ -49,7 +55,7 @@ export default function Credentials() {
                 fontWeight: 600,
               }}
             >
-              Computer Science
+              {t('education.major')}
             </p>
 
             <p
@@ -60,8 +66,7 @@ export default function Credentials() {
                 lineHeight: '1.5',
               }}
             >
-              Studying computer science, algorithms, software development,
-              and modern technologies.
+              {t('education.universityDesc')}
             </p>
           </div>
 
@@ -73,7 +78,7 @@ export default function Credentials() {
             }}
           >
             <strong style={{ color: '#111', fontSize: '15px' }}>
-              FEI Level 1 Jumping Steward
+              {t('education.feiTitle')}
             </strong>
 
             <p
@@ -83,95 +88,70 @@ export default function Credentials() {
                 fontWeight: 600,
               }}
             >
-              Official FEI Certification
+              {t('education.feiCert')}
             </p>
 
-            <ul
-              className="credential-list"
-              style={{ marginTop: '8px' }}
-            >
-              <li>
-                Completed official FEI Campus coursework and specialized
-                training modules.
-              </li>
-              <li>
-                Ensuring international rules, safety, and strict animal
-                welfare standards.
-              </li>
+            <ul className="credential-list" style={{ marginTop: '8px' }}>
+              <li>{t('education.feiBullet1')}</li>
+              <li>{t('education.feiBullet2')}</li>
             </ul>
           </div>
 
-          {/* Download FEI Certificate */}
           <a
             className="download-btn"
             href="/fei-level-1-certificate.pdf"
             download="Lazare-Osiashvili-FEI-Level-1-Certificate.pdf"
             style={{ marginTop: '20px' }}
           >
-            <span>Download Certificate (PDF)</span>
+            <span>{t('education.downloadCert')}</span>
             <span aria-hidden="true">↓</span>
           </a>
         </div>
 
-        {/* 2. Professional Skills */}
         <div className="credential-card" id="skills">
-          <div className="card-top-tag">EXPERTISE</div>
-          <h3>Professional Skills</h3>
-          <p className="credential-subtitle">
-            Equestrian & Technical Competencies
-          </p>
+          <div className="card-top-tag">{t('skills.tag')}</div>
+          <h3>{t('skills.title')}</h3>
+          <p className="credential-subtitle">{t('skills.subtitle')}</p>
 
           <div className="skills-container">
             <div className="skill-category">
               <span className="skill-cat-title">
-                Equestrian & Federation
+                {t('skills.equestrianTitle')}
               </span>
 
               <div className="skill-tags">
-                <span>Arena Management</span>
-                <span>Course Design Assist</span>
-                <span>Animal Welfare</span>
-                <span>Event Logistics</span>
-                <span>Horse Handling & Groundwork</span>
-                <span>Showjumping Rules (FEI)</span>
-                <span>Official Judging</span>
-                <span>Venue Setup</span>
+                {equestrianSkills.map((skill) => (
+                  <span key={skill}>{skill}</span>
+                ))}
               </div>
             </div>
 
             <div className="skill-category">
               <span className="skill-cat-title">
-                General & Technical
+                {t('skills.technicalTitle')}
               </span>
 
               <div className="skill-tags">
-                <span>Web Development</span>
-                <span>React & TypeScript</span>
-                <span>Algorithms & Logic</span>
-                <span>Problem Solving</span>
-                <span>Data Management</span>
-                <span>Team Coordination</span>
-                <span>Emergency Dispatch Prep</span>
+                {technicalSkills.map((skill) => (
+                  <span key={skill}>{skill}</span>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        {/* 3. Personal Information */}
         <div className="credential-card">
-          <div className="card-top-tag">PERSONAL INFO</div>
-          <h3>Background</h3>
-          <p className="credential-subtitle">
-            Personal Details & Languages
-          </p>
+          <div className="card-top-tag">{t('personal.tag')}</div>
+          <h3>{t('personal.title')}</h3>
+          <p className="credential-subtitle">{t('personal.subtitle')}</p>
 
           <div className="personal-info-cards">
             <div className="pi-card-item">
               <div className="pi-icon">🎂</div>
               <div className="pi-content">
-                <span className="pi-label">Date of Birth & Age</span>
+                <span className="pi-label">{t('personal.birthLabel')}</span>
                 <span className="pi-val">
-                  May 11, 2004 ({age} yrs)
+                  {t('personal.birthValue', { age })}
                 </span>
               </div>
             </div>
@@ -179,25 +159,31 @@ export default function Credentials() {
             <div className="pi-card-item">
               <div className="pi-icon">⚖️</div>
               <div className="pi-content">
-                <span className="pi-label">Physical Attributes</span>
-                <span className="pi-val">177 cm / 68 kg</span>
+                <span className="pi-label">
+                  {t('personal.physicalLabel')}
+                </span>
+                <span className="pi-val">{t('personal.physicalValue')}</span>
               </div>
             </div>
 
             <div className="pi-card-item">
               <div className="pi-icon">📍</div>
               <div className="pi-content">
-                <span className="pi-label">Location</span>
-                <span className="pi-val">Tbilisi, Georgia 🇬🇪</span>
+                <span className="pi-label">
+                  {t('personal.locationLabel')}
+                </span>
+                <span className="pi-val">{t('personal.locationValue')}</span>
               </div>
             </div>
 
             <div className="pi-card-item">
               <div className="pi-icon">🗣️</div>
               <div className="pi-content">
-                <span className="pi-label">Languages Spoken</span>
+                <span className="pi-label">
+                  {t('personal.languagesLabel')}
+                </span>
                 <span className="pi-val">
-                  Georgian (Native) • English (B2) • Russian (A2)
+                  {t('personal.languagesValue')}
                 </span>
               </div>
             </div>

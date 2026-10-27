@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "PROFESSIONAL EXPERIENCE",
+  "present": "Present",
+  "items": {
+    "federation": {
+      "title": "GEORGIAN EQUESTRIAN FEDERATION",
+      "subtitle": "Event Support & Organising Team",
+      "date": "2022 – Present",
+      "bullets": [
+        "Provided direct support to multi-time Georgian Champion and 2-time World Cup Qualifier Shalva Gachechiladze.",
+        "Served as an official Judge across all federation competitions.",
+        "Managed full-scale venue setup and live event execution for all events.",
+        "Built Official Georgian equestrian Federation website, managing real-time competition data and official results for every event."
+      ]
+    },
+    "courseDesigner": {
+      "title": "FEI COURSE DESIGNER EXPERIENCE",
+      "subtitle": "Working with International Course Designers",
+      "date": "2022 – Present",
+      "bullets": [
+        "Assisted Ivo Mikulič (FEI Course Designer) at multiple annual World Cup Qualifiers.",
+        "Worked with Olaf Scholz (FEI Course Designer) on technical course layouts."
+      ]
+    },
+    "steward": {
+      "title": "FEI STEWARD",
+      "subtitle": "Official Steward at Competition",
+      "date": "2025",
+      "bullets": [
+        "Participated in international and national competitions as an official FEI Level 1 Steward.",
+        "Ensured adherence to animal welfare standards and fair play under Chief Steward Jani Pavlovski."
+      ]
+    },
+    "riding": {
+      "title": "RIDING & HORSE HANDLING",
+      "subtitle": "Rider and Horse Experience",
+      "date": "2016 – Present",
+      "bullets": [
+        "Regular riding and horse handling experience.",
+        "Active participant in show jumping and equestrian training."
+      ]
+    }
+  }
+}

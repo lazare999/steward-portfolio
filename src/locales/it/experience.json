@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "ESPERIENZA PROFESSIONALE",
+  "present": "Presente",
+  "items": {
+    "federation": {
+      "title": "FEDERAZIONE EQUESTRE DELLA GEORGIA",
+      "subtitle": "Supporto eventi e team organizzativo",
+      "date": "2022 – Presente",
+      "bullets": [
+        "Supporto diretto al pluricampione georgiano e due volte qualificato di Coppa del Mondo Shalva Gachechiladze.",
+        "Giudice ufficiale in tutte le competizioni della federazione.",
+        "Gestione completa dell'allestimento delle sedi e dell'esecuzione live di tutti gli eventi.",
+        "Creazione del sito ufficiale della Federazione Equestre della Georgia, con gestione dei dati di gara in tempo reale e dei risultati ufficiali di ogni evento."
+      ]
+    },
+    "courseDesigner": {
+      "title": "ESPERIENZA CON I PROGETTISTI DI PERCORSI FEI",
+      "subtitle": "Lavoro con progettisti di percorsi internazionali",
+      "date": "2022 – Presente",
+      "bullets": [
+        "Assistenza a Ivo Mikulič (progettista di percorsi FEI) in diverse Qualifiche annuali di Coppa del Mondo.",
+        "Collaborazione con Olaf Scholz (progettista di percorsi FEI) su tracciati tecnici."
+      ]
+    },
+    "steward": {
+      "title": "STEWARD FEI",
+      "subtitle": "Steward ufficiale in competizione",
+      "date": "2025",
+      "bullets": [
+        "Partecipazione a competizioni internazionali e nazionali come Steward FEI Livello 1 ufficiale.",
+        "Garanzia del rispetto degli standard di benessere animale e del fair play sotto il Chief Steward Jani Pavlovski."
+      ]
+    },
+    "riding": {
+      "title": "EQUITAZIONE E GESTIONE DEI CAVALLI",
+      "subtitle": "Esperienza da cavaliere e con i cavalli",
+      "date": "2016 – Presente",
+      "bullets": [
+        "Esperienza regolare di equitazione e gestione dei cavalli.",
+        "Partecipante attivo al salto ostacoli e all'allenamento equestre."
+      ]
+    }
+  }
+}

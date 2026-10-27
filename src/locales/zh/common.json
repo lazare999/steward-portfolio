@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "ariaLabel": "主导航",
+    "openMenu": "打开导航菜单",
+    "closeMenu": "关闭导航菜单",
+    "brand": "LAZARE OSIASHVILI",
+    "profile": "简介",
+    "experience": "经历",
+    "stewardship": "赛事管理",
+    "riding": "骑术",
+    "education": "教育",
+    "contact": "联系"
+  },
+  "lang": {
+    "switchTo": "切换语言"
+  }
+}

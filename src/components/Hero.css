@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
-
 /* Hero Card */
 .hero-card {
   background: #ffffff;
@@ -23,6 +21,7 @@
   background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   filter: blur(4px) brightness(1.05) saturate(1.1);
   border-radius: inherit;
   z-index: 1;
@@ -95,6 +94,10 @@
 }
 
 /* Contact Details */
+address.contact-row {
+  font-style: normal;
+}
+
 .contact-row {
   display: flex;
   flex-wrap: wrap;

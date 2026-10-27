@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "BERUFLICHE ERFAHRUNG",
+  "present": "Heute",
+  "items": {
+    "federation": {
+      "title": "GEORGISCHER REITVERBAND",
+      "subtitle": "Event-Support und Organisationsteam",
+      "date": "2022 – Heute",
+      "bullets": [
+        "Direkte Unterstützung des mehrfachen georgischen Meisters und zweifachen Weltcup-Qualifikanten Shalva Gachechiladze.",
+        "Offizielle Richtertätigkeit bei allen Verbandsprüfungen.",
+        "Vollständige Organisation der Geländevorbereitung und Live-Durchführung aller Veranstaltungen.",
+        "Aufbau der offiziellen Website des Georgischen Reitverbands mit Echtzeit-Wettkampfdaten und offiziellen Ergebnissen für jedes Event."
+      ]
+    },
+    "courseDesigner": {
+      "title": "ERFAHRUNG MIT FEI-PARCOURSCHEFS",
+      "subtitle": "Arbeit mit internationalen Parcourschefs",
+      "date": "2022 – Heute",
+      "bullets": [
+        "Unterstützung von Ivo Mikulič (FEI-Parcourschef) bei mehreren jährlichen Weltcup-Qualifikationen.",
+        "Zusammenarbeit mit Olaf Scholz (FEI-Parcourschef) an technischen Parcoursanlagen."
+      ]
+    },
+    "steward": {
+      "title": "FEI-STEWARD",
+      "subtitle": "Offizieller Steward im Wettkampf",
+      "date": "2025",
+      "bullets": [
+        "Teilnahme an internationalen und nationalen Wettbewerben als offizieller FEI Level-1-Steward.",
+        "Sicherstellung von Tierschutzstandards und Fair Play unter Chief Steward Jani Pavlovski."
+      ]
+    },
+    "riding": {
+      "title": "REITEN UND PFERDEHANDLING",
+      "subtitle": "Erfahrung als Reiter und mit Pferden",
+      "date": "2016 – Heute",
+      "bullets": [
+        "Regelmäßige Erfahrung im Reiten und Pferdehandling.",
+        "Aktiver Teilnehmer am Springsport und equestrianischem Training."
+      ]
+    }
+  }
+}

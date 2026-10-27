@@ -65,7 +65,17 @@
   padding-left: 50px;
 }
 
+.honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .contact-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 16px;

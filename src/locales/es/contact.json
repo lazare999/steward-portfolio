@@ -1,0 +1,20 @@
+{
+  "badge": "LISTO PARA NUEVOS DESAFÍOS",
+  "title": "Disponible para cualquier vacante y colaboración ecuestre",
+  "description": "Si necesita un profesional experimentado y dedicado en organización de eventos, gestión de pistas y stewardship FEI, no dude en enviarme un mensaje.",
+  "form": {
+    "namePlaceholder": "Su nombre",
+    "emailPlaceholder": "Su correo electrónico",
+    "messagePlaceholder": "Su mensaje...",
+    "send": "Enviar mensaje",
+    "sending": "Enviando..."
+  },
+  "alerts": {
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "No se pudo enviar el mensaje. Inténtelo de nuevo."
+  },
+  "footer": {
+    "copyright": "© {{year}} Lazare Osiashvili. Todos los derechos reservados.",
+    "role": "Steward FEI Nivel 1 • Salto"
+  }
+}

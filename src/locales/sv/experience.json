@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "YRKESERFARENHET",
+  "present": "Nu",
+  "items": {
+    "federation": {
+      "title": "GEORGIENS RYTTARFÖRBUND",
+      "subtitle": "Evenemangsstöd och organisationslag",
+      "date": "2022 – Nu",
+      "bullets": [
+        "Direkt stöd till flerfaldig georgisk mästare och tvåfaldig världscupkvalificerad Shalva Gachechiladze.",
+        "Officiell domare vid alla förbundstävlingar.",
+        "Hanterade fullskalig platsuppsättning och livegenomförande av alla evenemang.",
+        "Byggde den officiella webbplatsen för Georgiens ryttarförbund med realtidsdata och officiella resultat för varje evenemang."
+      ]
+    },
+    "courseDesigner": {
+      "title": "ERFARENHET MED FEI-BANBYGGARE",
+      "subtitle": "Arbete med internationella banbyggare",
+      "date": "2022 – Nu",
+      "bullets": [
+        "Assisterade Ivo Mikulič (FEI-banbyggare) vid flera årliga världscupkval.",
+        "Arbetade med Olaf Scholz (FEI-banbyggare) på tekniska banläggningar."
+      ]
+    },
+    "steward": {
+      "title": "FEI-STEWARD",
+      "subtitle": "Officiell steward vid tävling",
+      "date": "2025",
+      "bullets": [
+        "Deltog i internationella och nationella tävlingar som officiell FEI nivå 1-steward.",
+        "Säkerställde efterlevnad av djurskyddsstandarder och fair play under Chief Steward Jani Pavlovski."
+      ]
+    },
+    "riding": {
+      "title": "RIDNING OCH HÄSTHANTERING",
+      "subtitle": "Erfarenhet som ryttare och med hästar",
+      "date": "2016 – Nu",
+      "bullets": [
+        "Regelbundet ridande och hästhantering.",
+        "Aktiv deltagare i hoppning och ryttarträning."
+      ]
+    }
+  }
+}

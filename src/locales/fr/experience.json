@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "EXPÉRIENCE PROFESSIONNELLE",
+  "present": "Présent",
+  "items": {
+    "federation": {
+      "title": "FÉDÉRATION ÉQUESTRE DE GÉORGIE",
+      "subtitle": "Soutien aux événements et équipe d'organisation",
+      "date": "2022 – Présent",
+      "bullets": [
+        "Soutien direct au multiple champion de Géorgie et double qualificatif Coupe du Monde Shalva Gachechiladze.",
+        "Juge officiel lors de toutes les compétitions de la fédération.",
+        "Gestion complète de la mise en place des sites et de l'exécution en direct de tous les événements.",
+        "Création du site officiel de la Fédération équestre de Géorgie, avec gestion des données de compétition en temps réel et des résultats officiels pour chaque événement."
+      ]
+    },
+    "courseDesigner": {
+      "title": "EXPÉRIENCE AVEC LES CHEFS DE PISTE FEI",
+      "subtitle": "Travail avec des chefs de piste internationaux",
+      "date": "2022 – Présent",
+      "bullets": [
+        "Assistance à Ivo Mikulič (chef de piste FEI) lors de plusieurs Qualifications Coupe du Monde annuelles.",
+        "Collaboration avec Olaf Scholz (chef de piste FEI) sur des tracés techniques de parcours."
+      ]
+    },
+    "steward": {
+      "title": "STEWARD FEI",
+      "subtitle": "Steward officiel en compétition",
+      "date": "2025",
+      "bullets": [
+        "Participation à des compétitions internationales et nationales en tant que Steward FEI Niveau 1 officiel.",
+        "Assurance du respect des normes de bien-être animal et du fair-play sous la direction du Chief Steward Jani Pavlovski."
+      ]
+    },
+    "riding": {
+      "title": "ÉQUITATION ET MANIPULATION DES CHEVAUX",
+      "subtitle": "Expérience de cavalier et de travail avec les chevaux",
+      "date": "2016 – Présent",
+      "bullets": [
+        "Expérience régulière d'équitation et de manipulation des chevaux.",
+        "Participant actif au saut d'obstacles et à l'entraînement équestre."
+      ]
+    }
+  }
+}

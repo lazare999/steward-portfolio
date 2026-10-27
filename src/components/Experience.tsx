@@ -1,76 +1,51 @@
+import { useTranslation } from 'react-i18next'
 import './Experience.css'
 
-const experiences = [
-  {
-    title: 'GEORGIAN EQUESTRIAN FEDERATION',
-    subtitle: 'Event Support & Organising Team',
-    date: '2022 – Present',
-    items: [
-      'Provided direct support to multi-time Georgian Champion and 2-time World Cup Qualifier Shalva Gachechiladze.',
-      'Served as an official Judge across all federation competitions.',
-      'Managed full-scale venue setup and live event execution for all events.',
-      'Built Official Georgian equestrian Federation website, managing real-time competition data and official results for every event.',
-    ],
-  },
-  {
-    title: 'FEI COURSE DESIGNER EXPERIENCE',
-    subtitle: 'Working with International Course Designers',
-    date: '2022 – Present',
-    items: [
-      'Assisted Ivo Mikulič (FEI Course Designer) at multiple annual World Cup Qualifiers.',
-      'Worked with Olaf Scholz (FEI Course Designer) on technical course layouts.',
-    ],
-  },
-  {
-    title: 'FEI STEWARD',
-    subtitle: 'Official Steward at Competition',
-    date: '2025',
-    items: [
-      'Participated in international and national competitions as an official FEI Level 1 Steward.',
-      'Ensured adherence to animal welfare standards and fair play under Chief Steward Jani Pavlovski.',
-    ],
-  },
-  {
-    title: 'RIDING & HORSE HANDLING',
-    subtitle: 'Rider and Horse Experience',
-    date: '2016 – Present',
-    items: [
-      'Regular riding and horse handling experience.',
-      'Active participant in show jumping and equestrian training.',
-    ],
-  },
-]
+const experienceKeys = [
+  { key: 'federation', id: undefined },
+  { key: 'courseDesigner', id: undefined },
+  { key: 'steward', id: 'stewardship' },
+  { key: 'riding', id: 'riding' },
+] as const
 
 export default function Experience() {
+  const { t } = useTranslation('experience')
+
   return (
     <section className="experience-section" id="experience">
       <div className="section-header">
-        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <h2>{t('sectionTitle')}</h2>
         <div className="section-line"></div>
       </div>
 
       <div className="experience-grid">
-        {experiences.map((exp, index) => (
-          <article
-            className="experience-card"
-            id={exp.title === 'FEI STEWARD' ? 'stewardship' : exp.title === 'RIDING & HORSE HANDLING' ? 'riding' : undefined}
-            key={index}
-          >
-            <div className="experience-card-header">
-              <div>
-                <h3>{exp.title}</h3>
-                <p className="experience-subtitle">{exp.subtitle}</p>
-              </div>
-              <span className="experience-date">{exp.date}</span>
-            </div>
+        {experienceKeys.map(({ key, id }) => {
+          const bullets = t(`items.${key}.bullets`, {
+            returnObjects: true,
+          }) as string[]
 
-            <ul className="experience-list">
-              {exp.items.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
+          return (
+            <article className="experience-card" id={id} key={key}>
+              <div className="experience-card-header">
+                <div>
+                  <h3>{t(`items.${key}.title`)}</h3>
+                  <p className="experience-subtitle">
+                    {t(`items.${key}.subtitle`)}
+                  </p>
+                </div>
+                <span className="experience-date">
+                  {t(`items.${key}.date`)}
+                </span>
+              </div>
+
+              <ul className="experience-list">
+                {bullets.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          )
+        })}
       </div>
     </section>
   )

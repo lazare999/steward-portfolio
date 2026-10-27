@@ -1,0 +1,20 @@
+{
+  "badge": "BEREIT FÜR NEUE HERAUSFORDERUNGEN",
+  "title": "Offen für jede equestrianische Stelle und Zusammenarbeit",
+  "description": "Wenn Sie einen erfahrenen und engagierten Fachmann für Eventorganisation, Arenamanagement und FEI-Stewardship benötigen, senden Sie gerne eine Nachricht.",
+  "form": {
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "Ihre E-Mail",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "send": "Nachricht senden",
+    "sending": "Wird gesendet..."
+  },
+  "alerts": {
+    "success": "Nachricht erfolgreich gesendet!",
+    "error": "Nachricht konnte nicht gesendet werden. Bitte erneut versuchen."
+  },
+  "footer": {
+    "copyright": "© {{year}} Lazare Osiashvili. Alle Rechte vorbehalten.",
+    "role": "FEI Level-1-Steward • Springen"
+  }
+}

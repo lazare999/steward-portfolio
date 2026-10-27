@@ -1,0 +1,44 @@
+{
+  "sectionTitle": "专业经历",
+  "present": "至今",
+  "items": {
+    "federation": {
+      "title": "格鲁吉亚马术联合会",
+      "subtitle": "赛事支持与组织团队",
+      "date": "2022 – 至今",
+      "bullets": [
+        "为多次格鲁吉亚冠军、两届世界杯资格赛选手 Shalva Gachechiladze 提供直接支持。",
+        "在联合会所有比赛中担任官方裁判。",
+        "负责所有赛事的场地全面布置与现场执行。",
+        "建设格鲁吉亚马术联合会官方网站，管理每场赛事的实时竞赛数据与官方成绩。"
+      ]
+    },
+    "courseDesigner": {
+      "title": "FEI 路线设计师合作经历",
+      "subtitle": "与国际路线设计师合作",
+      "date": "2022 – 至今",
+      "bullets": [
+        "在多届年度世界杯资格赛中协助 Ivo Mikulič（FEI 路线设计师）。",
+        "与 Olaf Scholz（FEI 路线设计师）合作完成技术路线布置。"
+      ]
+    },
+    "steward": {
+      "title": "FEI 赛事管理官",
+      "subtitle": "赛事官方 Steward",
+      "date": "2025",
+      "bullets": [
+        "作为官方 FEI 一级赛事管理官参加国际与国内比赛。",
+        "在首席 Steward Jani Pavlovski 指导下确保动物福利标准与公平竞赛。"
+      ]
+    },
+    "riding": {
+      "title": "骑术与马匹护理",
+      "subtitle": "骑手与马匹经验",
+      "date": "2016 – 至今",
+      "bullets": [
+        "定期进行骑乘与马匹护理。",
+        "积极参与场地障碍与马术训练。"
+      ]
+    }
+  }
+}

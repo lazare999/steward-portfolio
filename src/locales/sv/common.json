@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "ariaLabel": "Huvudnavigering",
+    "openMenu": "Öppna navigationsmenyn",
+    "closeMenu": "Stäng navigationsmenyn",
+    "brand": "LAZARE OSIASHVILI",
+    "profile": "PROFIL",
+    "experience": "ERFARENHET",
+    "stewardship": "STEWARDSHIP",
+    "riding": "RIDNING",
+    "education": "UTBILDNING",
+    "contact": "KONTAKT"
+  },
+  "lang": {
+    "switchTo": "Byt språk"
+  }
+}

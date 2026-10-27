@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "ariaLabel": "Основная навигация",
+    "openMenu": "Открыть меню навигации",
+    "closeMenu": "Закрыть меню навигации",
+    "brand": "LAZARE OSIASHVILI",
+    "profile": "ПРОФИЛЬ",
+    "experience": "ОПЫТ",
+    "stewardship": "СТЮАРДСТВО",
+    "riding": "ВЕРХОВАЯ ЕЗДА",
+    "education": "ОБРАЗОВАНИЕ",
+    "contact": "КОНТАКТЫ"
+  },
+  "lang": {
+    "switchTo": "Сменить язык"
+  }
+}

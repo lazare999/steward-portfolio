@@ -1,0 +1,20 @@
+{
+  "badge": "REDO FÖR NYA UTMANINGAR",
+  "title": "Redo för alla ryttarrelaterade uppdrag och samarbeten",
+  "description": "Om ni behöver en erfaren och engagerad yrkesperson inom evenemangsorganisation, arenahantering och FEI-stewardship, skicka gärna ett meddelande.",
+  "form": {
+    "namePlaceholder": "Ditt namn",
+    "emailPlaceholder": "Din e-post",
+    "messagePlaceholder": "Ditt meddelande...",
+    "send": "Skicka meddelande",
+    "sending": "Skickar..."
+  },
+  "alerts": {
+    "success": "Meddelandet skickades!",
+    "error": "Meddelandet kunde inte skickas. Försök igen."
+  },
+  "footer": {
+    "copyright": "© {{year}} Lazare Osiashvili. Alla rättigheter förbehållna.",
+    "role": "FEI nivå 1-steward • Hoppning"
+  }
+}

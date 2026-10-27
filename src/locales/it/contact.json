@@ -1,0 +1,20 @@
+{
+  "badge": "PRONTO PER NUOVE SFIDE",
+  "title": "Disponibile per qualsiasi posizione e collaborazione equestre",
+  "description": "Se avete bisogno di un professionista esperto e dedicato nell'organizzazione di eventi, gestione delle arene e stewardship FEI, non esitate a inviarmi un messaggio.",
+  "form": {
+    "namePlaceholder": "Il vostro nome",
+    "emailPlaceholder": "La vostra e-mail",
+    "messagePlaceholder": "Il vostro messaggio...",
+    "send": "Invia messaggio",
+    "sending": "Invio in corso..."
+  },
+  "alerts": {
+    "success": "Messaggio inviato con successo!",
+    "error": "Impossibile inviare il messaggio. Riprovare."
+  },
+  "footer": {
+    "copyright": "© {{year}} Lazare Osiashvili. Tutti i diritti riservati.",
+    "role": "Steward FEI Livello 1 • Salto Ostacoli"
+  }
+}
