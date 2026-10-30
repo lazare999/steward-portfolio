@@ -1,4 +1,4 @@
-{
+﻿{
   "sectionTitle": "BERUFLICHE ERFAHRUNG",
   "present": "Heute",
   "items": {
@@ -7,10 +7,11 @@
       "subtitle": "Event-Support und Organisationsteam",
       "date": "2022 – Heute",
       "bullets": [
-        "Direkte Unterstützung des mehrfachen georgischen Meisters und zweifachen Weltcup-Qualifikanten Shalva Gachechiladze.",
-        "Offizielle Richtertätigkeit bei allen Verbandsprüfungen.",
-        "Vollständige Organisation der Geländevorbereitung und Live-Durchführung aller Veranstaltungen.",
-        "Aufbau der offiziellen Website des Georgischen Reitverbands mit Echtzeit-Wettkampfdaten und offiziellen Ergebnissen für jedes Event."
+        "Provided direct support to multi-time Georgian Champion and 2-time World Cup Qualifier **Shalva GACHECHILADZE**.",
+        "Served as an official Jump Crew member across all federation competitions.",
+        "Managed full-scale venue setup and live event execution for all events.",
+        "Built Official [Georgian Equestrian Federation](https://www.georgianequestrianfederation.ge/) website, managing real-time competition data and official results for every event.",
+        "Developed an interactive show jumping [Course Memory Game](https://equestiran-course-game.web.app/) challenging players to memorize obstacle sequences and accurately trace the exact route on-screen."
       ]
     },
     "courseDesigner": {
@@ -18,17 +19,21 @@
       "subtitle": "Arbeit mit internationalen Parcourschefs",
       "date": "2022 – Heute",
       "bullets": [
-        "Unterstützung von Ivo Mikulič (FEI-Parcourschef) bei mehreren jährlichen Weltcup-Qualifikationen.",
-        "Zusammenarbeit mit Olaf Scholz (FEI-Parcourschef) an technischen Parcoursanlagen."
+        "Assisted **Ivo MIKELSONS** (FEI Course Designer Level 3) at multiple annual World Cup Qualifiers.",
+        "Worked with **Olaf PETERSEN** (FEI Course Designer Level 4) on technical course layouts and track adjustments.",
+        "Executed full arena setups from technical blueprints, ensuring precise distance measurements and obstacle positioning per FEI standards.",
+        "Coordinated on-arena logistics, electronic timing placement, and dynamic course modifications between competition rounds."
       ]
     },
     "steward": {
       "title": "FEI-STEWARD",
       "subtitle": "Offizieller Steward im Wettkampf",
-      "date": "2025",
+      "date": "2026",
       "bullets": [
-        "Teilnahme an internationalen und nationalen Wettbewerben als offizieller FEI Level-1-Steward.",
-        "Sicherstellung von Tierschutzstandards und Fair Play unter Chief Steward Jani Pavlovski."
+        "Participated in international and national competitions as an official FEI Level 1 Steward.",
+        "Ensured strict adherence to animal welfare standards and fair play under Chief Steward **Jan POSLUSZNY** (FEI Jumping Steward Level 3).",
+        "Supervised and prepared warm-up arenas in accordance with official FEI standards and regulations.",
+        "Conducted mandatory boot checks, saddlery, and equipment inspections to safeguard equine welfare."
       ]
     },
     "riding": {
@@ -36,8 +41,9 @@
       "subtitle": "Erfahrung als Reiter und mit Pferden",
       "date": "2016 – Heute",
       "bullets": [
-        "Regelmäßige Erfahrung im Reiten und Pferdehandling.",
-        "Aktiver Teilnehmer am Springsport und equestrianischem Training."
+        "Experienced rider focused on exercising, schooling, and conditioning horses for daily fitness and athletic development.",
+        "Perform all aspects of daily horse handling, from grooming and tacking to post-workout care.",
+        "Apply practical knowledge of equine behavior to ensure safe and stress-free handling in any environment."
       ]
     }
   }

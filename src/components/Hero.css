@@ -5,10 +5,21 @@
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05),
     0 1px 3px rgba(0, 0, 0, 0.01);
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr);
   align-items: center;
-  min-height: clamp(560px, 47vw, 760px);
+  column-gap: 0;
+  min-height: clamp(420px, 42vw, 620px);
   overflow: hidden;
+}
+
+/* Only large desktops: first viewport shows this card alone */
+@media (min-width: 1200px) {
+  .hero-card {
+    min-height: calc(
+      100svh - clamp(18px, 3vw, 45px) * 2 - 4.75rem - clamp(22px, 2.5vw, 35px)
+    );
+  }
 }
 
 /* Background Scenery */
@@ -17,7 +28,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  width: 55%;
+  width: 50%;
   background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
@@ -29,27 +40,37 @@
   -webkit-mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.3) 15%,
-    rgba(0, 0, 0, 1) 40%
+    rgba(0, 0, 0, 0.2) 28%,
+    rgba(0, 0, 0, 1) 58%
   );
   mask-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.3) 15%,
-    rgba(0, 0, 0, 1) 40%
+    rgba(0, 0, 0, 0.2) 28%,
+    rgba(0, 0, 0, 1) 58%
   );
+}
+
+/* Left stack: text + contacts */
+.hero-left {
+  position: relative;
+  z-index: 5;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  padding: clamp(36px, 4vw, 64px) 0 clamp(36px, 4vw, 64px)
+    clamp(28px, 3.5vw, 56px);
 }
 
 /* Hero Content */
 .hero-content {
-  position: relative;
-  z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: min(74%, 1000px);
-  min-height: inherit;
-  padding: clamp(36px, 4vw, 68px);
+  width: 100%;
+  min-width: 0;
 }
 
 /* Badge */
@@ -58,38 +79,43 @@
   align-items: center;
   width: fit-content;
   max-width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   padding: 8px 16px;
   border-radius: 50px;
   background-color: #1b2a4a;
   color: #ffffff;
-  font-size: clamp(12px, 1.35vw, 20px);
+  font-size: clamp(13px, 1.35vw, 18px);
   font-weight: 600;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 /* Typography */
 .hero-content h1 {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   color: #111111;
   font-family: 'Cinzel', serif;
-  font-size: clamp(36px, 4.1vw, 62px);
+  font-size: clamp(38px, 4.2vw, 62px);
   font-weight: 600;
   line-height: 1.15;
 }
 
 .hero-description {
-  max-width: 720px;
+  max-width: none;
+  width: 100%;
   margin-bottom: 10px;
+  padding-right: clamp(4px, 0.8vw, 12px);
   color: #555555;
-  font-size: clamp(15px, 1.25vw, 19px);
-  line-height: 1.65;
+  font-size: clamp(16px, 1.35vw, 20px);
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .hero-divider {
-  width: min(100%, 620px);
+  width: 100%;
   height: 1px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   background-color: #eeeeee;
 }
 
@@ -103,7 +129,7 @@ address.contact-row {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  gap: 12px;
+  gap: 10px;
   margin-top: 0;
 }
 
@@ -117,7 +143,7 @@ address.contact-row {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(4px);
   color: #222222;
-  font-size: clamp(11px, 0.85vw, 14px);
+  font-size: clamp(11px, 0.85vw, 13px);
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -136,41 +162,53 @@ address.contact-row {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
-/* Rider Cutout Image (მაქსიმალურად გაზრდილი ზომები) */
+/* Rider Cutout Image */
 .hero-image-container {
-  position: absolute;
-  right: -20px;
-  bottom: 0;
+  position: relative;
   z-index: 4;
+  grid-column: 2;
   display: flex;
-  align-items: flex-end;
-  width: min(65%, 920px);
-  height: 115%;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin-left: clamp(-160px, -13vw, -80px);
+  padding: clamp(8px, 1vw, 16px) clamp(4px, 1vw, 12px)
+    clamp(8px, 1vw, 16px) 0;
   pointer-events: none;
 }
 
 .hero-image-3d {
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: 136%;
+  max-width: none;
+  height: auto;
+  max-height: 100%;
   object-fit: contain;
+  object-position: left center;
+  transform: translateX(-3%);
   filter: brightness(1.02) contrast(1.02)
-    drop-shadow(-15px 12px 25px rgba(0, 0, 0, 0.22));
+    drop-shadow(-12px 10px 22px rgba(0, 0, 0, 0.2));
+}
 
-  -webkit-mask-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 15%
-  );
-  mask-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 15%
-  );
+/* Soften pull on mid-size desktops */
+@media (max-width: 1199px) and (min-width: 969px) {
+  .hero-image-container {
+    margin-left: clamp(-72px, -6vw, -32px);
+  }
+
+  .hero-image-3d {
+    width: 118%;
+    transform: none;
+  }
 }
 
 /* Tablet and Mobile */
 @media (max-width: 968px) {
   .hero-card {
+    display: flex;
     flex-direction: column;
     min-height: auto;
   }
@@ -179,7 +217,7 @@ address.contact-row {
     top: auto;
     bottom: 0;
     width: 100%;
-    height: clamp(260px, 48vw, 440px);
+    height: clamp(260px, 52vw, 400px);
     border-radius: 0;
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit;
@@ -187,40 +225,60 @@ address.contact-row {
     -webkit-mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 35%
+      rgba(0, 0, 0, 1) 40%
     );
     mask-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 1) 35%
+      rgba(0, 0, 0, 1) 40%
     );
   }
 
-  .hero-content {
-    width: 100%;
-    min-height: auto;
-    padding: clamp(28px, 5vw, 52px);
+  /* Unwrap left stack so photo / text / contacts can reorder */
+  .hero-left {
+    display: contents;
   }
 
-  .hero-content h1 {
-    font-size: clamp(30px, 6vw, 44px);
+  .hero-content {
+    order: 1;
+    width: 100%;
+    min-height: auto;
+    padding: clamp(28px, 5vw, 48px) clamp(28px, 5vw, 48px) 8px;
   }
 
   .hero-image-container {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    z-index: 4;
-    width: min(100%, 580px);
+    order: 2;
+    width: min(100%, 520px);
     max-width: 100%;
-    height: clamp(260px, 48vw, 440px);
-    margin: -20px auto 0;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px 16px;
+    justify-content: center;
+  }
+
+  .contact-row {
+    order: 3;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    justify-content: center;
+    padding: 8px clamp(28px, 5vw, 48px) clamp(28px, 5vw, 48px);
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 5.5vw, 40px);
   }
 
   .hero-image-3d {
-    object-fit: contain;
-    -webkit-mask-image: none;
-    mask-image: none;
+    width: 100%;
+    height: auto;
+    max-height: clamp(240px, 46vw, 360px);
+    transform: none;
+    object-position: center center;
+  }
+
+  .hero-divider {
+    display: none;
   }
 }
 
@@ -231,7 +289,15 @@ address.contact-row {
   }
 
   .hero-content {
-    padding: 28px 22px 20px;
+    padding: 28px 22px 6px;
+  }
+
+  .contact-row {
+    padding: 6px 22px 24px;
+  }
+
+  .hero-image-container {
+    padding: 4px 12px 8px;
   }
 
   .badge {
@@ -241,7 +307,7 @@ address.contact-row {
   }
 
   .hero-content h1 {
-    font-size: clamp(30px, 9vw, 44px);
+    font-size: clamp(28px, 8.5vw, 40px);
     overflow-wrap: anywhere;
   }
 
@@ -251,18 +317,23 @@ address.contact-row {
 
   .contact-row {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 8px;
   }
 
   .contact-item {
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
     font-size: 11px;
     overflow-wrap: anywhere;
+    text-align: center;
   }
 }
 
 @media (max-width: 380px) {
-  .hero-content {
+  .hero-content,
+  .contact-row {
     padding-right: 18px;
     padding-left: 18px;
   }

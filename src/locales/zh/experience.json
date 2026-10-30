@@ -1,4 +1,4 @@
-{
+﻿{
   "sectionTitle": "专业经历",
   "present": "至今",
   "items": {
@@ -7,10 +7,11 @@
       "subtitle": "赛事支持与组织团队",
       "date": "2022 – 至今",
       "bullets": [
-        "为多次格鲁吉亚冠军、两届世界杯资格赛选手 Shalva Gachechiladze 提供直接支持。",
-        "在联合会所有比赛中担任官方裁判。",
-        "负责所有赛事的场地全面布置与现场执行。",
-        "建设格鲁吉亚马术联合会官方网站，管理每场赛事的实时竞赛数据与官方成绩。"
+        "Provided direct support to multi-time Georgian Champion and 2-time World Cup Qualifier **Shalva GACHECHILADZE**.",
+        "Served as an official Jump Crew member across all federation competitions.",
+        "Managed full-scale venue setup and live event execution for all events.",
+        "Built Official [Georgian Equestrian Federation](https://www.georgianequestrianfederation.ge/) website, managing real-time competition data and official results for every event.",
+        "Developed an interactive show jumping [Course Memory Game](https://equestiran-course-game.web.app/) challenging players to memorize obstacle sequences and accurately trace the exact route on-screen."
       ]
     },
     "courseDesigner": {
@@ -18,17 +19,21 @@
       "subtitle": "与国际路线设计师合作",
       "date": "2022 – 至今",
       "bullets": [
-        "在多届年度世界杯资格赛中协助 Ivo Mikulič（FEI 路线设计师）。",
-        "与 Olaf Scholz（FEI 路线设计师）合作完成技术路线布置。"
+        "Assisted **Ivo MIKELSONS** (FEI Course Designer Level 3) at multiple annual World Cup Qualifiers.",
+        "Worked with **Olaf PETERSEN** (FEI Course Designer Level 4) on technical course layouts and track adjustments.",
+        "Executed full arena setups from technical blueprints, ensuring precise distance measurements and obstacle positioning per FEI standards.",
+        "Coordinated on-arena logistics, electronic timing placement, and dynamic course modifications between competition rounds."
       ]
     },
     "steward": {
       "title": "FEI 赛事管理官",
       "subtitle": "赛事官方 Steward",
-      "date": "2025",
+      "date": "2026",
       "bullets": [
-        "作为官方 FEI 一级赛事管理官参加国际与国内比赛。",
-        "在首席 Steward Jani Pavlovski 指导下确保动物福利标准与公平竞赛。"
+        "Participated in international and national competitions as an official FEI Level 1 Steward.",
+        "Ensured strict adherence to animal welfare standards and fair play under Chief Steward **Jan POSLUSZNY** (FEI Jumping Steward Level 3).",
+        "Supervised and prepared warm-up arenas in accordance with official FEI standards and regulations.",
+        "Conducted mandatory boot checks, saddlery, and equipment inspections to safeguard equine welfare."
       ]
     },
     "riding": {
@@ -36,8 +41,9 @@
       "subtitle": "骑手与马匹经验",
       "date": "2016 – 至今",
       "bullets": [
-        "定期进行骑乘与马匹护理。",
-        "积极参与场地障碍与马术训练。"
+        "Experienced rider focused on exercising, schooling, and conditioning horses for daily fitness and athletic development.",
+        "Perform all aspects of daily horse handling, from grooming and tacking to post-workout care.",
+        "Apply practical knowledge of equine behavior to ensure safe and stress-free handling in any environment."
       ]
     }
   }

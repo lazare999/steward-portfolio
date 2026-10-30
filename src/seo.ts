@@ -163,7 +163,7 @@ export function applySeo(lang: LanguageCode) {
       'Show Jumping',
       'Arena Management',
       'Equestrian Event Organisation',
-      'Course Design Assistance',
+      'Course Design & Layout',
     ],
     sameAs: [],
   })

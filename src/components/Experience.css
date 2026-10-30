@@ -114,6 +114,23 @@
   font-weight: bold;
 }
 
+.experience-list li strong {
+  color: #111111;
+  font-weight: 700;
+}
+
+.experience-inline-link {
+  color: #1b2a4a;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.experience-inline-link:hover {
+  color: #0f1a2e;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .experience-grid {

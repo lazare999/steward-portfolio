@@ -8,14 +8,16 @@ export default function Hero() {
     <section className="hero-card" id="profile" aria-labelledby="hero-name">
       <div className="card-bg-scenery" aria-hidden="true"></div>
 
-      <div className="hero-content">
-        <p className="badge">{t('badge')}</p>
+      <div className="hero-left">
+        <div className="hero-content">
+          <p className="badge">{t('badge')}</p>
 
-        <h1 id="hero-name">{t('name')}</h1>
+          <h1 id="hero-name">{t('name')}</h1>
 
-        <p className="hero-description">{t('description')}</p>
+          <p className="hero-description">{t('description')}</p>
 
-        <div className="hero-divider" aria-hidden="true"></div>
+          <div className="hero-divider" aria-hidden="true"></div>
+        </div>
 
         <address className="contact-row">
           <a
@@ -65,7 +67,7 @@ export default function Hero() {
           alt={t('imageAlt')}
           className="hero-image-3d"
           width={900}
-          height={1100}
+          height={616}
           decoding="async"
           fetchPriority="high"
         />

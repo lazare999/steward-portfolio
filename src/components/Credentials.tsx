@@ -106,6 +106,16 @@ export default function Credentials() {
             <span>{t('education.downloadCert')}</span>
             <span aria-hidden="true">↓</span>
           </a>
+
+          <a
+            className="download-btn"
+            href="/lazare-osiashvili-cv.jpg"
+            download="Lazare-Osiashvili-CV.jpg"
+            style={{ marginTop: '12px' }}
+          >
+            <span>{t('education.downloadCv')}</span>
+            <span aria-hidden="true">↓</span>
+          </a>
         </div>
 
         <div className="credential-card" id="skills">

@@ -38,21 +38,6 @@ function App() {
         <nav className="top-nav" aria-label={t('nav.ariaLabel')}>
           <div className="nav-brand">{t('nav.brand')}</div>
 
-          <button
-            className="nav-toggle"
-            type="button"
-            aria-label={
-              isMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')
-            }
-            aria-expanded={isMenuOpen}
-            aria-controls="primary-navigation"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
           <div
             className={`nav-links${isMenuOpen ? ' is-open' : ''}`}
             id="primary-navigation"
@@ -75,8 +60,25 @@ function App() {
             <a href={`/${lang}#contact`} onClick={closeMenu}>
               {t('nav.contact')}
             </a>
+          </div>
 
+          <div className="nav-actions">
             <LanguageSelect />
+
+            <button
+              className="nav-toggle"
+              type="button"
+              aria-label={
+                isMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')
+              }
+              aria-expanded={isMenuOpen}
+              aria-controls="primary-navigation"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </nav>
       </header>

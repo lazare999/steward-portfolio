@@ -1,4 +1,4 @@
-{
+﻿{
   "sectionTitle": "YRKESERFARENHET",
   "present": "Nu",
   "items": {
@@ -7,10 +7,11 @@
       "subtitle": "Evenemangsstöd och organisationslag",
       "date": "2022 – Nu",
       "bullets": [
-        "Direkt stöd till flerfaldig georgisk mästare och tvåfaldig världscupkvalificerad Shalva Gachechiladze.",
-        "Officiell domare vid alla förbundstävlingar.",
-        "Hanterade fullskalig platsuppsättning och livegenomförande av alla evenemang.",
-        "Byggde den officiella webbplatsen för Georgiens ryttarförbund med realtidsdata och officiella resultat för varje evenemang."
+        "Provided direct support to multi-time Georgian Champion and 2-time World Cup Qualifier **Shalva GACHECHILADZE**.",
+        "Served as an official Jump Crew member across all federation competitions.",
+        "Managed full-scale venue setup and live event execution for all events.",
+        "Built Official [Georgian Equestrian Federation](https://www.georgianequestrianfederation.ge/) website, managing real-time competition data and official results for every event.",
+        "Developed an interactive show jumping [Course Memory Game](https://equestiran-course-game.web.app/) challenging players to memorize obstacle sequences and accurately trace the exact route on-screen."
       ]
     },
     "courseDesigner": {
@@ -18,17 +19,21 @@
       "subtitle": "Arbete med internationella banbyggare",
       "date": "2022 – Nu",
       "bullets": [
-        "Assisterade Ivo Mikulič (FEI-banbyggare) vid flera årliga världscupkval.",
-        "Arbetade med Olaf Scholz (FEI-banbyggare) på tekniska banläggningar."
+        "Assisted **Ivo MIKELSONS** (FEI Course Designer Level 3) at multiple annual World Cup Qualifiers.",
+        "Worked with **Olaf PETERSEN** (FEI Course Designer Level 4) on technical course layouts and track adjustments.",
+        "Executed full arena setups from technical blueprints, ensuring precise distance measurements and obstacle positioning per FEI standards.",
+        "Coordinated on-arena logistics, electronic timing placement, and dynamic course modifications between competition rounds."
       ]
     },
     "steward": {
       "title": "FEI-STEWARD",
       "subtitle": "Officiell steward vid tävling",
-      "date": "2025",
+      "date": "2026",
       "bullets": [
-        "Deltog i internationella och nationella tävlingar som officiell FEI nivå 1-steward.",
-        "Säkerställde efterlevnad av djurskyddsstandarder och fair play under Chief Steward Jani Pavlovski."
+        "Participated in international and national competitions as an official FEI Level 1 Steward.",
+        "Ensured strict adherence to animal welfare standards and fair play under Chief Steward **Jan POSLUSZNY** (FEI Jumping Steward Level 3).",
+        "Supervised and prepared warm-up arenas in accordance with official FEI standards and regulations.",
+        "Conducted mandatory boot checks, saddlery, and equipment inspections to safeguard equine welfare."
       ]
     },
     "riding": {
@@ -36,8 +41,9 @@
       "subtitle": "Erfarenhet som ryttare och med hästar",
       "date": "2016 – Nu",
       "bullets": [
-        "Regelbundet ridande och hästhantering.",
-        "Aktiv deltagare i hoppning och ryttarträning."
+        "Experienced rider focused on exercising, schooling, and conditioning horses for daily fitness and athletic development.",
+        "Perform all aspects of daily horse handling, from grooming and tacking to post-workout care.",
+        "Apply practical knowledge of equine behavior to ensure safe and stress-free handling in any environment."
       ]
     }
   }

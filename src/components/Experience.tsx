@@ -1,3 +1,4 @@
+import { Fragment, type ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import './Experience.css'
 
@@ -7,6 +8,52 @@ const experienceKeys = [
   { key: 'steward', id: 'stewardship' },
   { key: 'riding', id: 'riding' },
 ] as const
+
+const richTokenRegex = /(\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)|\*\*([^*]+)\*\*)/g
+
+function renderRichText(text: string): ReactNode[] {
+  const nodes: ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+  let key = 0
+
+  richTokenRegex.lastIndex = 0
+  while ((match = richTokenRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(
+        <Fragment key={`t-${key++}`}>
+          {text.slice(lastIndex, match.index)}
+        </Fragment>,
+      )
+    }
+
+    if (match[2] && match[3]) {
+      nodes.push(
+        <a
+          key={`a-${key++}`}
+          href={match[3]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="experience-inline-link"
+        >
+          {match[2]}
+        </a>,
+      )
+    } else if (match[4]) {
+      nodes.push(<strong key={`b-${key++}`}>{match[4]}</strong>)
+    }
+
+    lastIndex = match.index + match[0].length
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(
+      <Fragment key={`t-${key++}`}>{text.slice(lastIndex)}</Fragment>,
+    )
+  }
+
+  return nodes
+}
 
 export default function Experience() {
   const { t } = useTranslation('experience')
@@ -40,7 +87,7 @@ export default function Experience() {
 
               <ul className="experience-list">
                 {bullets.map((item, i) => (
-                  <li key={i}>{item}</li>
+                  <li key={i}>{renderRichText(item)}</li>
                 ))}
               </ul>
             </article>
